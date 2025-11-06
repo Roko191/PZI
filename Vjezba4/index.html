@@ -3,52 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vjezba 3</title>
+    <title>Vjezba 4</title>
+
+    <link rel="stylesheet" href="./styles/style.css" />
+
 </head>
     <body>
-        <div class="container">
+        <div id="wrapper">
             <header>
+                <div class="container">
                 <h2>Pizza bar</h2>
                 <nav>
-                    <a href="#">Početna</a>
-                    <a href="#">Novosti</a>
-                    <a href="#">Cjenik</a>
-                    <a href="#">Kontakti</a>
+                    <a class="nav-links" href="#">Početna</a>
+                    <a class="nav-links" href="#">Novosti</a>
+                    <a class="nav-links" href="#">Cjenik</a>
+                    <a class="nav-links" href="#">Kontakti</a>
                 </nav>
-                <img src="./slike/Pizza-cover.png" alt="Pizza na stolu" style="width: 500px;">
-                <section>
-                    <h1>Najbolja pizza u gradu</h1>
-                    <p>Dostupna u cijelom gradu <a href="#">Naruči odmah</a></p>
-                </section>
+                </div>
             </header>
-            <section id="akcija">
-                <h2>Odaberi najbolju pizzu</h2>
-                <div>
-                    <article>
-                        <img src="./slike/pizzas/margherita.png" alt="Margherita" width="200px" />
+            <section id="cover">
+                <img src="./slike/Pizza-cover.png" alt="Pizza na stolu">
+                <div id="bg-gradient"></div>
+                <div class="cover-text container">
+                    <h1>Najbolja pizza u gradu</h1>
+                    <small>Dostupna u cijelom gradu </small>
+                    <button class="action-btn">Naruči odmah</button>
+                </div>
+            </section>
+            <section id="akcija" class="section-box">
+                <h2 class="section-title">Odaberi najbolju pizzu</h2>
+                <span class="title-underline"></span>
+                <div id="pizzas-holder">
+                    <article class="pizza-card">
+                        <img src="./slike/pizzas/margherita.png" class="pizza-img" alt="Margherita" width="200px" />
                         <h3>Margherita</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus earum nobis magnam placeat nemo velit corrupti minus nulla cupiditate, voluptatibus accusantium modi at tempora dolores delectus officia! Reprehenderit, quis inventore!</p>
-                        <span>Vec od <em>10,00€</em></span>
-                        <button>Naruči</button>
+                        <p class="pizza-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus earum nobis magnam placeat nemo velit corrupti minus nulla cupiditate, voluptatibus accusantium modi at tempora dolores delectus officia! Reprehenderit, quis inventore!</p>
+                        <span class="pizza-price">Vec od <em>10,00€</em></span>
+                        <button class="pizza-btn">Naruči</button>
                     </article>
-                    <article>
-                        <img src="./slike/pizzas/capricciosa.png" alt="Capricciosa" width="200px" />
+                    <article class="pizza-card">
+                        <img src="./slike/pizzas/capricciosa.png" class="pizza-img" alt="Capricciosa" width="200px" />
                         <h3>Capricciosa</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus earum nobis magnam placeat nemo velit corrupti minus nulla cupiditate, voluptatibus accusantium modi at tempora dolores delectus officia! Reprehenderit, quis inventore!</p>
-                        <span>Vec od <em>11,00€</em></span>
-                        <button>Naruči</button>
+                        <p class="pizza-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus earum nobis magnam placeat nemo velit corrupti minus nulla cupiditate, voluptatibus accusantium modi at tempora dolores delectus officia! Reprehenderit, quis inventore!</p>
+                        <span class="pizza-price">Vec od <em>11,00€</em></span>
+                        <button class="pizza-btn">Naruči</button>
                     </article>
-                    <article>
-                        <img src="./slike/pizzas/pancetta.png" alt="Pancetta" width="200px" />
+                    <article class="pizza-card">
+                        <img src="./slike/pizzas/pancetta.png" class="pizza-img" alt="Pancetta" width="200px" />
                         <h3>Pancetta</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus earum nobis magnam placeat nemo velit corrupti minus nulla cupiditate, voluptatibus accusantium modi at tempora dolores delectus officia! Reprehenderit, quis inventore!</p>
-                        <span>Vec od <em>12,00€</em></span>
-                        <button>Naruči</button>
+                        <p class="pizza-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus earum nobis magnam placeat nemo velit corrupti minus nulla cupiditate, voluptatibus accusantium modi at tempora dolores delectus officia! Reprehenderit, quis inventore!</p>
+                        <span class="pizza-price">Vec od <em>12,00€</em></span>
+                        <button class="pizza-btn">Naruči</button>
                     </article>
                 </div>
             </section>
-            <seciton id="cjenik">
-                <h3>Cjenik</h3>
+            <seciton id="cjenik" class="section-box">
+                <h3 class="section-title">Cjenik</h3>
+                <span class="title-underline"></span>
                 <table style="border: 1px solid black;">
                     <tbody>
                         <tr style="border: 1px solid black;">
@@ -102,9 +113,10 @@
                 </table>
             </section>
         
-
+            <section id="contact" class="section-box">
             <form>
-                <h2>Kontaktirajte nas</h2>
+                <h2 class="section-title">Kontaktirajte nas</h2>
+                <span class="title-underline"></span>
 
                 <label for="mail">Email</label>
                 <br>
@@ -121,6 +133,7 @@
 
                 <input type="submit" value="Pošalji">
             </form>
+            </section>
 
             <footer>
                 <ul>
@@ -132,7 +145,7 @@
                     Pizza Bar
                 </h4>
                 <p><i>&COPY; 2025. Sva prava pridržana</i></p>
-                <p><b>Roko Vuković</b></p>
+                <p><b>Roko Vuković</b></p>     
             </footer>
         </div>
     </body>

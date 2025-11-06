@@ -1,0 +1,175 @@
+body {
+    margin: 0;
+    color: #333333;
+    font-family: 'Pacifico', cursive;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+#wrapper {
+    background-color: #fafafa;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #c00a27;
+    padding: 16px 0px 16px 0px;
+    z-index: 1;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0px 16px 0px 16px;
+}
+
+header h2 {
+    display: inline-block;
+    color: #FFF;
+    margin: 0;
+    font-size: 32px;
+    padding: 0px 16px 0px 16px;
+    line-height: 1.4em;
+}
+
+nav {
+    float: right;
+    padding: 10px 0px 10px 0px;
+}
+
+.nav-links {
+    font-weight: 600;
+    color: #FFF;
+    padding: 0px 12px 0px 12px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+#cover{
+    position: relative;
+    background-color: #c00a27;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+#cover img{
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    display: block;
+}
+
+#cover .cover-text {
+    position: absolute;
+    text-align: center;
+    padding: 0;
+    left: 0; right: 0;
+    top: 36%;
+}
+
+.cover-text h1 {
+    margin: 8px 0px 8px 0px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 54px;
+    line-height: 1.4em;
+}
+
+.cover-text small {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    display: block;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.action-btn{
+    text-decoration: none;
+    background-color: #78bb1b;
+    color: #FFF;
+    padding: 12px 36px;
+    border-radius: 23px;
+}
+
+#bg-gradient{
+    position: absolute;
+    top: 0;
+    width: 100%; height: 100%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+}
+
+.section-box{
+    padding: 80px 0 40px;
+}
+
+.section-title{
+    text-align: center;
+    font-size: 26px;
+    line-height: 2em;
+    margin: 0;
+}
+
+.title-underline {
+    width: 80px;
+    height: 3px;
+    background-color: #c00a27;
+    margin: 0 auto;
+    display: block;
+    top: 6px; bottom: 6px;
+}
+
+#pizzas-holder {
+    padding: 40px 0px;
+    text-align: center;
+}
+
+.pizza-card {
+    display: inline-block;
+    width: 300px;
+    margin: 0px 4px;
+    padding: 20px 16px;
+    border: 2px solid transparent;
+}
+
+.pizza-card:hover {
+    background-color: #FFF;
+    border-color: #eee;
+    transition: 0.2s ease-in;
+}
+
+.pizza-img {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.pizza-desc {
+    font-size: 14px;
+    color: #777;
+}
+
+.pizza-price {
+    font-size: 80%;
+}
+
+.pizza-price em {
+    font-size: 20px;
+    padding-left: 4px;
+}
+
+.pizza-btn {
+    display: block;
+    margin: 0 auto;
+    top: 12px; bottom: 12px;
+    padding: 8px 0px;
+    font-family: 'Pacifico', cursive;
+    font-size: 16px;
+    border: 2px solid transparent;
+    background-color: #c00a27;
+    color: #FFF;
+    width: 150px;
+    border-radius: 22px;
+    text-decoration: none;
+}
