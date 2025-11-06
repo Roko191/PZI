@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vjezba 3</title>
+</head>
+    <body>
+        <div class="container">
+            <header>
+                <h2>Pizza bar</h2>
+                <nav>
+                    <a href="#">Početna</a>
+                    <a href="#">Novosti</a>
+                    <a href="#">Cjenik</a>
+                    <a href="#">Kontakti</a>
+                </nav>
+                <img src="./slike/Pizza-cover.png" alt="Pizza na stolu" style="width: 500px;">
+                <section>
+                    <h1>Najbolja pizza u gradu</h1>
+                    <p>Dostupna u cijelom gradu <a href="#">Naruči odmah</a></p>
+                </section>
+            </header>
+            <section id="akcija">
+                <h2>Odaberi najbolju pizzu</h2>
+                <div>
+                    <article>
+                        <img src="./slike/pizzas/margherita.png" alt="Margherita" width="200px" />
+                        <h3>Margherita</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus earum nobis magnam placeat nemo velit corrupti minus nulla cupiditate, voluptatibus accusantium modi at tempora dolores delectus officia! Reprehenderit, quis inventore!</p>
+                        <span>Vec od <em>10,00€</em></span>
+                        <button>Naruči</button>
+                    </article>
+                    <article>
+                        <img src="./slike/pizzas/capricciosa.png" alt="Capricciosa" width="200px" />
+                        <h3>Capricciosa</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus earum nobis magnam placeat nemo velit corrupti minus nulla cupiditate, voluptatibus accusantium modi at tempora dolores delectus officia! Reprehenderit, quis inventore!</p>
+                        <span>Vec od <em>11,00€</em></span>
+                        <button>Naruči</button>
+                    </article>
+                    <article>
+                        <img src="./slike/pizzas/pancetta.png" alt="Pancetta" width="200px" />
+                        <h3>Pancetta</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus earum nobis magnam placeat nemo velit corrupti minus nulla cupiditate, voluptatibus accusantium modi at tempora dolores delectus officia! Reprehenderit, quis inventore!</p>
+                        <span>Vec od <em>12,00€</em></span>
+                        <button>Naruči</button>
+                    </article>
+                </div>
+            </section>
+            <seciton id="cjenik">
+                <h3>Cjenik</h3>
+                <table style="border: 1px solid black;">
+                    <tbody>
+                        <tr style="border: 1px solid black;">
+                            <th style="border: 1px solid black;">Pizza</th>
+                            <th style="border: 1px solid black;">Veličina</th>
+                            <th style="border: 1px solid black;">Cijena</th>
+                        </tr>
+
+                        <tr style="border: 1px solid black;">
+                            <td rowspan="3" style="border: 1px solid black;">Margherita</td>
+                            <td style="border: 1px solid black;">Mala</td>
+                            <td style="border: 1px solid black;">22,00 kn</td>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="border: 1px solid black;">Velika</td>
+                            <td style="border: 1px solid black;">34,00 kn</td>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="border: 1px solid black;">Jumbo</td>
+                            <td style="border: 1px solid black;">60,00 kn</td>
+                        </tr>
+
+                        <tr style="border: 1px solid black;">
+                            <td rowspan="3" style="border: 1px solid black;">Capricciosa</td>
+                            <td style="border: 1px solid black;">Mala</td>
+                            <td style="border: 1px solid black;">23,00 kn</td>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="border: 1px solid black;">Velika</td>
+                            <td style="border: 1px solid black;">36,00 kn</td>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="border: 1px solid black;">Jumbo</td>
+                            <td style="border: 1px solid black;">64,00 kn</td>
+                        </tr>
+
+                        <tr style="border: 1px solid black;">
+                            <td rowspan="3" style="border: 1px solid black;">Pancetta</td>
+                            <td style="border: 1px solid black;">Mala</td>
+                            <td style="border: 1px solid black;">24,00 kn</td>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="border: 1px solid black;">Velika</td>
+                            <td style="border: 1px solid black;">38,00 kn</td>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="border: 1px solid black;">Jumbo</td>
+                            <td style="border: 1px solid black;">66,00 kn</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        
+
+            <form>
+                <h2>Kontaktirajte nas</h2>
+
+                <label for="mail">Email</label>
+                <br>
+                <input id="mail" name="mail" type="email" placeholder="name@example.com" />
+                <br>
+
+                <label for="title">Naslov</label>
+                <br>
+                <input id="title" name="title" type="text" placeholder="Naslov poruke" />
+                <br>
+
+                <textarea placeholder="Vrsta poruke" style="width: 100px; height: 75px;"></textarea>
+                <br>
+
+                <input type="submit" value="Pošalji">
+            </form>
+
+            <footer>
+                <ul>
+                    <li><a href="https://facebook.com/" target="_blank">Facebook</a></li>
+                    <li><a href="https://instagram.com/" target="_blank">Instagram</a></li>
+                    <li><a href="maito:rvukov00@fesb.hr">Email</a></li>
+                </ul>
+                <h4>
+                    Pizza Bar
+                </h4>
+                <p><i>&COPY; 2025. Sva prava pridržana</i></p>
+                <p><b>Roko Vuković</b></p>
+            </footer>
+        </div>
+    </body>
+</html>
