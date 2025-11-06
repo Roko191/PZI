@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vjezba 4</title>
+
+    <link rel="stylesheet" href="./styles/style.css" />
+
+</head>
+    <body>
+        <div id="wrapper">
+            <header>
+                <div class="container">
+                <h2>Pizza bar</h2>
+                <nav>
+                    <a class="nav-links" href="#">Početna</a>
+                    <a class="nav-links" href="#">Novosti</a>
+                    <a class="nav-links" href="#">Cjenik</a>
+                    <a class="nav-links" href="#">Kontakti</a>
+                </nav>
+                </div>
+            </header>
+            <section id="cover">
+                <img src="./slike/Pizza-cover.png" alt="Pizza na stolu">
+                <div id="bg-gradient"></div>
+                <div class="cover-text container">
+                    <h1>Najbolja pizza u gradu</h1>
+                    <small>Dostupna u cijelom gradu </small>
+                    <button class="action-btn">Naruči odmah</button>
+                </div>
+            </section>
+            <section id="akcija" class="section-box">
+                <h2 class="section-title">Odaberi najbolju pizzu</h2>
+                <span class="title-underline"></span>
+                <div id="pizzas-holder">
+                    <article class="pizza-card">
+                        <img src="./slike/pizzas/margherita.png" class="pizza-img" alt="Margherita" width="200px" />
+                        <h3>Margherita</h3>
+                        <p class="pizza-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus earum nobis magnam placeat nemo velit corrupti minus nulla cupiditate, voluptatibus accusantium modi at tempora dolores delectus officia! Reprehenderit, quis inventore!</p>
+                        <span class="pizza-price">Vec od <em>10,00€</em></span>
+                        <button class="pizza-btn">Naruči</button>
+                    </article>
+                    <article class="pizza-card">
+                        <img src="./slike/pizzas/capricciosa.png" class="pizza-img" alt="Capricciosa" width="200px" />
+                        <h3>Capricciosa</h3>
+                        <p class="pizza-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus earum nobis magnam placeat nemo velit corrupti minus nulla cupiditate, voluptatibus accusantium modi at tempora dolores delectus officia! Reprehenderit, quis inventore!</p>
+                        <span class="pizza-price">Vec od <em>11,00€</em></span>
+                        <button class="pizza-btn">Naruči</button>
+                    </article>
+                    <article class="pizza-card">
+                        <img src="./slike/pizzas/pancetta.png" class="pizza-img" alt="Pancetta" width="200px" />
+                        <h3>Pancetta</h3>
+                        <p class="pizza-desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus earum nobis magnam placeat nemo velit corrupti minus nulla cupiditate, voluptatibus accusantium modi at tempora dolores delectus officia! Reprehenderit, quis inventore!</p>
+                        <span class="pizza-price">Vec od <em>12,00€</em></span>
+                        <button class="pizza-btn">Naruči</button>
+                    </article>
+                </div>
+            </section>
+            <seciton id="cjenik" class="section-box">
+                <h3 class="section-title">Cjenik</h3>
+                <span class="title-underline"></span>
+                <table style="border: 1px solid black;">
+                    <tbody>
+                        <tr style="border: 1px solid black;">
+                            <th style="border: 1px solid black;">Pizza</th>
+                            <th style="border: 1px solid black;">Veličina</th>
+                            <th style="border: 1px solid black;">Cijena</th>
+                        </tr>
+
+                        <tr style="border: 1px solid black;">
+                            <td rowspan="3" style="border: 1px solid black;">Margherita</td>
+                            <td style="border: 1px solid black;">Mala</td>
+                            <td style="border: 1px solid black;">22,00 kn</td>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="border: 1px solid black;">Velika</td>
+                            <td style="border: 1px solid black;">34,00 kn</td>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="border: 1px solid black;">Jumbo</td>
+                            <td style="border: 1px solid black;">60,00 kn</td>
+                        </tr>
+
+                        <tr style="border: 1px solid black;">
+                            <td rowspan="3" style="border: 1px solid black;">Capricciosa</td>
+                            <td style="border: 1px solid black;">Mala</td>
+                            <td style="border: 1px solid black;">23,00 kn</td>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="border: 1px solid black;">Velika</td>
+                            <td style="border: 1px solid black;">36,00 kn</td>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="border: 1px solid black;">Jumbo</td>
+                            <td style="border: 1px solid black;">64,00 kn</td>
+                        </tr>
+
+                        <tr style="border: 1px solid black;">
+                            <td rowspan="3" style="border: 1px solid black;">Pancetta</td>
+                            <td style="border: 1px solid black;">Mala</td>
+                            <td style="border: 1px solid black;">24,00 kn</td>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="border: 1px solid black;">Velika</td>
+                            <td style="border: 1px solid black;">38,00 kn</td>
+                        </tr>
+                        <tr style="border: 1px solid black;">
+                            <td style="border: 1px solid black;">Jumbo</td>
+                            <td style="border: 1px solid black;">66,00 kn</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        
+            <section id="contact" class="section-box">
+            <form>
+                <h2 class="section-title">Kontaktirajte nas</h2>
+                <span class="title-underline"></span>
+
+                <label for="mail">Email</label>
+                <br>
+                <input id="mail" name="mail" type="email" placeholder="name@example.com" />
+                <br>
+
+                <label for="title">Naslov</label>
+                <br>
+                <input id="title" name="title" type="text" placeholder="Naslov poruke" />
+                <br>
+
+                <textarea placeholder="Vrsta poruke" style="width: 100px; height: 75px;"></textarea>
+                <br>
+
+                <input type="submit" value="Pošalji">
+            </form>
+            </section>
+
+            <footer>
+                <ul>
+                    <li><a href="https://facebook.com/" target="_blank">Facebook</a></li>
+                    <li><a href="https://instagram.com/" target="_blank">Instagram</a></li>
+                    <li><a href="maito:rvukov00@fesb.hr">Email</a></li>
+                </ul>
+                <h4>
+                    Pizza Bar
+                </h4>
+                <p><i>&COPY; 2025. Sva prava pridržana</i></p>
+                <p><b>Roko Vuković</b></p>     
+            </footer>
+        </div>
+    </body>
+</html>
