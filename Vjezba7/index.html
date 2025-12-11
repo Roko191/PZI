@@ -262,7 +262,6 @@
                 type="button"
                 id="years-button"
                 value="Izračunaj najmlađega"
-                onclick="calcYears()"
               />
             </form>
           </div>
@@ -298,30 +297,100 @@
     <!--
       Unutar <script> elementa s id-om "zadatak1", napisati JavaScript kôd za 'Zadatak 1'
     -->
-    <script id="zadatak1"></script>
+    <script id="zadatak1">
+      let a = 5;
+      let b = 3;
+      document.getElementById("rezultat1").innerText = a + b;
+    </script>
 
     <!-- Unutar <script> elementa napisati JavaScript kôd za 'Zadatak 2' -->
-    <script id="zadatak2"></script>
+    <script id="zadatak2">
+      const zbroj = (a, b) => {
+          return a+b;
+      }
+      document.getElementById("rezultat2").innerText = zbroj(5, 3);
+    </script>
 
     <!-- Unutar <script> elementa napisati JavaScript kôd za 'Zadatak 3' -->
-    <script id="zadatak3"></script>
+    <script id="zadatak3">
+      let ime = "Roko";
+      let prezime = "Vukovic";
+      let punoIme =  `${ime} ${prezime}`;
+      const r3 = document.getElementById("rezultat3"); 
+      if(punoIme.length > 15){
+        r3.innerText = "dugo";
+      } else {
+        r3.innerText = "kratko";
+      }
+
+    </script>
 
     <!-- Unutar <script> elementa napisati JavaScript kôd za 'Zadatak 4' -->
-    <script id="zadatak4"></script>
+    <script id="zadatak4">
+      const r4 = document.getElementById("rezultat4");
+      for(let i = 1; i <= 20; i++){
+        if(i== 20){
+          r4.innerHTML += `${i}`
+          continue;
+        }
+        r4.innerHTML += `${i}, `
+      } 
+    </script>
 
     <!-- Unutar <script> elementa napisati JavaScript kôd za 'Zadatak 5' -->
     <script id="zadatak5">
       var numbers = [123, 6, 343, 76, 234345, 857789, 56, 8, 34234, 8347];
+      let largest = numbers[0];
+      for(let i = 0; i < numbers.length; i++){
+        if(numbers[i] > largest){
+          largest = numbers[i];
+        }
+      }
+      document.getElementById("rezultat5").innerText = largest;
     </script>
 
     <!-- Unutar <script> elementa napisati JavaScript kôd za 'Zadatak 6' -->
-    <script id="zadatak6"></script>
+    <script id="zadatak6">
+      let kolegij = {
+        naziv: "Programiranje za Internet",
+        ocjena: 5,
+        profesor: "Ljiljana Seric",
+        korsniLabosi: null
+      }
+      document.getElementById("rezultat6").innerHTML = `Naziv: ${kolegij.naziv}, Ocjena: ${kolegij.ocjena}`
+    </script>
 
     <!-- Unutar <script> elementa napisati JavaScript kôd za 'Zadatak 7' -->
-    <script id="zadatak7"></script>
+    <script id="zadatak7">
+          document.getElementById("rezultat7").innerHTML = `${new Date().getHours()}:${new Date().getMinutes()}:${new Date().getSeconds()}`
+    </script>
 
     <!-- Unutar <script> elementa napisati JavaScript kôd za 'Zadatak 8' -->
-    <script id="zadatak8"></script>
+    <script id="zadatak8">
+      const izracunajNajmladeg = (pero, marko, ivan) => {
+          const r8 = document.getElementById("rezultat8");
+          if(pero < marko && pero < ivan){
+            r8.innerHTML = "Pero";
+          }
+          if(marko < pero && marko < ivan){
+            r8.innerHTML = "Marko";
+          }
+          if(ivan < pero && ivan < marko){
+            r8.innerHTML = "Ivan";
+          }
+      }
+
+      document.getElementById("years-button").addEventListener("click", (e) => {
+        e.preventDefault();        
+        
+        let ivan = document.getElementById("godinaIvan").value;
+        let pero = document.getElementById("godinaPero").value;
+        let marko = document.getElementById("godinaMarko").value;
+
+        izracunajNajmladeg(pero, marko, ivan);
+      })
+
+    </script>
 
     <!-- Custom script for rendering Code Highlighter -->
     <script src="./js/skripta.js"></script>
